@@ -1,13 +1,13 @@
 # Configuration file for KinectFusionApp
 
-data_path = "/home/christian/share/dataset/"
-recording_name = "woman"
+data_path = "/dmc/"
+recording_name = "record"
 
 # Input camera settings
 [camera]
-#type = "Pseudo"
+type = "Pseudo"
 #type = "Xtion"
-type = "RealSense"
+#type = "RealSense"
 
 [camera.realsense]
 live = true

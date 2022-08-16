@@ -60,6 +60,7 @@ CameraParameters PseudoCamera::get_parameters() const
     return cam_params;
 }
 
+/*
 // ### Asus Xtion PRO LIVE
 XtionCamera::XtionCamera() :
         device{}, depthStream{}, colorStream{}, depthFrame{},
@@ -291,6 +292,7 @@ CameraParameters RealSenseCamera::get_parameters() const
 }
 
 
+*/
 
 // ### Kinect ###
 /*

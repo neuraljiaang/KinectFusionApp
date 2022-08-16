@@ -16,7 +16,7 @@
 #include <OpenNI.h>
 #pragma GCC diagnostic pop
 
-#include <librealsense2/rs.hpp>
+//#include <librealsense2/rs.hpp>
 
 using kinectfusion::CameraParameters;
 
@@ -58,9 +58,10 @@ private:
     mutable size_t current_index;
 };
 
+
 /*
  * Provides depth frames acquired by a Asus Xtion PRO LIVE camera.
- */
+
 class XtionCamera : public DepthCamera {
 public:
     XtionCamera();
@@ -79,10 +80,11 @@ private:
 
     CameraParameters cam_params;
 };
+*/
 
 /*
  * Provides depth frames acquired by an Intel Realsense camera.
- */
+
 class RealSenseCamera : public DepthCamera {
 public:
     RealSenseCamera();
@@ -101,6 +103,7 @@ private:
     float depth_scale;
 };
 
+*/
 
 /*
  * Provides depth frames acquired by a Microsoft Kinect camera.

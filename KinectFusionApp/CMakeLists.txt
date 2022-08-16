@@ -41,7 +41,7 @@ if (OPENNI2_FOUND)
 endif (OPENNI2_FOUND)
 
 ## Intel RealSense
-find_package(realsense2 REQUIRED)
+find_package(realsense2)
 if (realsense2_FOUND)
     include_directories("${realsense_INCLUDE_DIR}")
 endif (realsense2_FOUND)
@@ -53,4 +53,4 @@ include_directories(${CMAKE_SOURCE_DIR}/KinectFusionLib/include)
 file(GLOB KinectFusionApp_SRCS ${PROJECT_SOURCE_DIR}/*.cpp)
 
 add_executable(KinectFusionApp ${KinectFusionApp_SRCS})
-target_link_libraries(KinectFusionApp ${OpenCV_LIBS} ${OPENNI2_LIBRARY} ${realsense2_LIBRARY} KinectFusion)
+target_link_libraries(KinectFusionApp ${OpenCV_LIBS} KinectFusion)
