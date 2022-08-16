@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(KinectFusionApp)
+project(App)
 
 # Use modern C++
 set(CMAKE_CXX_STANDARD 14)
@@ -52,5 +52,5 @@ include_directories(${CMAKE_SOURCE_DIR}/KinectFusionLib/include)
 
 file(GLOB KinectFusionApp_SRCS ${PROJECT_SOURCE_DIR}/*.cpp)
 
-add_executable(KinectFusionApp ${KinectFusionApp_SRCS})
-target_link_libraries(KinectFusionApp ${OpenCV_LIBS} KinectFusion)
+add_executable(App ${KinectFusionApp_SRCS})
+target_link_libraries(App ${OpenCV_LIBS} KinectFusion)
