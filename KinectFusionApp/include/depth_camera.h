@@ -13,7 +13,7 @@
 #pragma GCC diagnostic ignored "-Wextra"
 #pragma GCC diagnostic ignored "-Weffc++"
 #pragma GCC diagnostic ignored "-Wunused-variable"
-#include <OpenNI.h>
+//#include <OpenNI.h>
 #pragma GCC diagnostic pop
 
 //#include <librealsense2/rs.hpp>
